@@ -14,6 +14,20 @@ PuppyBowl is a web application built using Vite, designed to manage a list of ad
 
 5. **Delete Player**: In case a player needs to be removed from the competition, users have the option to delete player entries.
 
+## Installation
+
+1. Clone this repository to your local machine.
+   ```bash
+   git clone https://github.com/your-username/puppybowl.git
+   
+
+2. Navigate to the project directory
+  ```cd puppybowl
+
+3. Install dependencies 
+  ``` npm i 
+  ```
+
 
 ## Technologies Used
 
