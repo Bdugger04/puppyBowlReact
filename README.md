@@ -22,11 +22,12 @@ PuppyBowl is a web application built using Vite, designed to manage a list of ad
    
 
 2. Navigate to the project directory
-  ```cd puppybowl
+  ```bash 
+  cd puppybowl
 
 3. Install dependencies 
-  ``` npm i 
-  ```
+  ```bash
+   npm i 
 
 
 ## Technologies Used
