@@ -18,6 +18,11 @@
   text-decoration: none;
   color: white;
   font-size: 1.5em;
+  cursor: pointer;
+}
+
+.breed-link a:hover{
+  text-decoration: underline;
 }
 
 .title {
@@ -37,4 +42,11 @@
   color: white;
   text-decoration: none;
   font-size: 1.5em;
+  cursor: pointer;
+  
+}
+
+
+.links a:hover{
+  text-decoration: underline;
 }
