@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "../styles/allpuppies.css";
+import {useNavigate} from 'react-router-dom'
+import SinglePuppy from "./SinglePuppy";
 
 export default function AllPuppies() {
   const baseUrl = "https://fsa-puppy-bowl.herokuapp.com/api/bdugger04/players";
   const [players, setPlayers] = useState([]);
-  // const [imageHeights, setImageHeights] = useState([])
+  const navigate = useNavigate()
+  
 
   useEffect(() => {
     async function getAllPlayers() {
@@ -15,36 +18,30 @@ export default function AllPuppies() {
         console.log("players", players);
         setPlayers(players);
       } catch (error) {
-        console.error("rendering puppies didnt work bro", error);
+        console.error("getting puppies didnt work bro", error);
       }
     }
     getAllPlayers();
   }, []);
 
-  // const getImageHeight = async (url)  => {
-  //   return new Promise((resolve, reject) => {
-  //     const img = new Image();
-  //     img.src = url;
-  //     img.onload = () => resolve(img.height);
-  //     img.onerror = reject;
-  //   });
-  // }
-  
+  function handleClick(){
+    navigate('/players/:id')
+  }
+ 
 
   return (
     <>
       <h1>Enrolled Puppies</h1>
       <article className="card-container">
         {players.map((player) => {
-          // const imageHeight = await getImageHeight(player.imageUrl);
-          // const isSmallImage = imageHeight < 200;
         return (
           <div key={player.name} className="puppy-card">
-          {/* <div className={`puppy-card ${isSmallImage ? 'small-image' : ''}`}  key={player.name}> */}
+          
               <img className="puppy-img" src={player.imageUrl} />
               <div className="puppy-details">
                 <h1>{player.name}</h1>
                 <h2>{player.breed}</h2>
+                <button onClick={handleClick} className="button"> Details</button>
               </div>
             </div>
           

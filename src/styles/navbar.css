@@ -5,18 +5,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: pink;
-  color: white;
+  background-color: rgb(245, 213, 167);
+  color: black;
+  box-shadow: 0px 2px 2px black;
   padding: 20px 20px;
 }
 
 .breed-link {
   flex: 1;
+  font-family: fantasy;
 }
 
 .breed-link a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.5em;
   cursor: pointer;
 }
@@ -29,17 +31,19 @@
   flex: 2; 
   text-align: center;
   font-size: 2.5em;
+  font-family: fantasy;
 }
 
 .links {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  font-family: fantasy;
 }
 
 .links a {
   margin-left: 20px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1.5em;
   cursor: pointer;

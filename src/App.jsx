@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
-import './App.css'
 import {Routes, Route} from 'react-router-dom'
 import AllPuppies from './components/AllPuppies'
 import SinglePuppy from './components/SinglePuppy'

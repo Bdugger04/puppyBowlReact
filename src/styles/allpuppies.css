@@ -1,26 +1,56 @@
 
+body {
+  background-color: rgb(194, 223, 233);
+}
+
+
+/*-------- puppy card CSS ---------*/
 .card-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 20px;
 }
 .puppy-card{
-  width: calc(33.33% - 20px);
-  background-color: #2595be5c;
-  padding:20px;
-  border-radius: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+    background-color: rgb(252, 229, 197);
+    margin: 5px;
+    width: 18rem;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 1%;
+    text-align: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 5px 5px black;
+    border-radius: 30px;
+  
 }
 .puppy-img{
   /* width: 200px; */
-  width:100%;
-  border-radius: 50%;
+  margin-top: 20px;
+  width: 80%;
 }
 
-.small-image .puppy-img {
-  height: 300px;
+/*------ button CSS ---------*/
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(230, 143, 36);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+.button:hover {
+  background-color: #45a049; 
+}
+
+/* Active state */
+.button:active {
+  background-color: #3e8e41; 
+}
+
